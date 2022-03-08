@@ -22,8 +22,8 @@ from django.urls import path
 
 from django.urls import include, path
 
-
+## Base URL
 urlpatterns = [
-    path('polls/', include('polls.urls')),
+    path('polls/', include('polls.urls')), #mysite.urls --> polls.urls
     path('admin/', admin.site.urls),
 ]

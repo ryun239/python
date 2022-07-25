@@ -20,7 +20,6 @@ def sol(a, b):
                 b_idx = len(a) -1
             else:
                 b_idx -= 1
-
         elif a.index(a[0]) == a.index(max(a)):
             a = a[1:]
             cnt += 1
@@ -30,8 +29,6 @@ def sol(a, b):
                 b_idx -= 1
 
     return cnt
-
-
 
 if __name__ == "__main__":
     my_list = [1, 2, 5, 2, 1]

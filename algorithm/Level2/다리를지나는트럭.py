@@ -1,10 +1,10 @@
 
 def sol(length, w, trucks):
-    cnt = 0
     bridge = [0 for _ in range(length)]
+    answer = 0
 
     while bridge:
-        cnt += 1
+        answer += 1
         bridge.pop(0)
 
         if trucks:
@@ -12,22 +12,13 @@ def sol(length, w, trucks):
                 bridge.append(trucks.pop(0))
             else:
                 bridge.append(0)
-    
-    return cnt
-    
 
-
-
-
+    return answer
 
 if __name__ == "__main__":
-    # a = 2
-    # b = 10
-    # c = [7,4,5,6]
-    a = 100
-    b = 100
-    # c = [10,10,10,10,10,10,10,10,10,10]	
-    c = [10]
+    a = 2
+    b = 10
+    c = [7,4,5,6]
 
     ret = sol(a, b, c)
     print(ret)
